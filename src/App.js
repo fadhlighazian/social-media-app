@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
+import MenuNavbar from './components/menu/MenuNavbar';
+import UserList from './components/pages/users/UserList';
+import PostList from './components/pages/posts/PostList';
+import AlbumList from './components/pages/albums/AlbumList';
+import PhotoList from './components/pages/photos/PhotoList';
+import Container from 'react-bootstrap/Container';
+import UserDetail from './components/pages/users/UserDetail';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <MenuNavbar />
+      <Container>
+        <Routes>
+          <Route exact path='/' element={<Navigate to='/users' />} />
+          <Route exact path='/users' element={<UserList />} />
+          <Route exact path='/users/:id' element={<UserDetail />} />
+          <Route exact path='/users/:id/posts' element={<PostList />} />
+          <Route exact path='/users/:id/albums' element={<AlbumList />} />
+          <Route exact path='/users/:id/photos' element={<PhotoList />} />
+        </Routes>
+      </Container>
+      <Footer />
     </div>
   );
 }

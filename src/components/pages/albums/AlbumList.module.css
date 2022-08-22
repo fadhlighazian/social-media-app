@@ -1,0 +1,32 @@
+.sectionAlbumList {
+  margin: 2rem 0;
+}
+.sectionAlbumList h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3134;
+  margin: 1rem;
+}
+.sectionAlbumList .body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+/* for Ipad  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sectionAlbumList .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+/* for Mobile */
+@media (max-width: 768px) {
+  .sectionAlbumList .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

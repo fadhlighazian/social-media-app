@@ -1,0 +1,37 @@
+.footerContainer {
+  text-align: center;
+  background-color: #212529;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  height: 60px;
+}
+
+.footerContainer p {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+/* for Ipad  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerContainer {
+    text-align: center;
+    background-color: #212529;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    height: 60px;
+  }
+}
+
+/* for Mobile */
+@media (max-width: 768px) {
+  .footerContainer {
+    text-align: center;
+    background-color: #212529;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    height: 80px;
+  }
+}

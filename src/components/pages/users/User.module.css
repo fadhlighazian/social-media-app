@@ -1,0 +1,53 @@
+.user-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cardContainer {
+  background: #ffffff;
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.card-profile {
+  display: flex;
+}
+
+.card-profile img {
+  width: 80px;
+  height: fit-content;
+  border-radius: 5rem;
+}
+
+.card-desc {
+  margin-left: 1rem;
+}
+
+.card-desc h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3134;
+}
+
+.card-desc p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #56677a;
+}
+
+.btnLink {
+  background-color: #00a4a4;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .user-group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

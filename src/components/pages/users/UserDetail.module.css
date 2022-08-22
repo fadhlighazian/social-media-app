@@ -1,0 +1,59 @@
+.section {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  column-gap: 1rem;
+}
+
+.cardProfile {
+  text-align: center;
+  margin-top: 2rem;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 0px 2px 14px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+}
+
+.cardProfile img.banner {
+  height: 150px;
+}
+
+.cardProfile img.imgSty {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.cardProfile h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3134;
+  margin-top: 1rem;
+}
+
+.cardProfile p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #56677a;
+}
+
+.cardBody {
+  position: relative;
+  top: -100px;
+}
+
+/* for Ipad  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
+
+/* for Mobile */
+@media (max-width: 768px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
